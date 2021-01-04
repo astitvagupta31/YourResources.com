@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Project</title>
+
+</head>
+
+<body>
+  <div>
+    <header id="heading">YourResources.com
+      <button type="button" class="btn btn-dark shiftright" id="mybutton">Log In</button>
+    </header>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+
+
+    <div id="mySidenav" class="sidenav imp">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Log In</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer;color: black;" onclick="openNav()">&#9776;</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+    <ul class="navbar-nav">
+      <a class="navbar-brand" href="#">YourResources</a>
+    </ul>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link active imp" href="#">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link imp" href="#">ABOUT</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle imp" href="#" id="navbardrop" data-toggle="dropdown">
+            PACKAGES
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link imp" href="corona.html" target="_blank">COVID-19 UPDATES</a>
+        </li>
+
+      </ul>
+
+
+      <form class="form-inline ml-auto">
+        <input type="text" class="form-control mr-sm-2" placeholder="Search">
+        <button type="submit" class="btn btn-outline-light">Search</button>
+      </form>
+
+
+    </div>
+
+  </nav>
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="2.jpg" alt="electronic machine">
+
+        <div class="carousel-caption">
+          <h1>ELECTRONICS MACHINE</h1>
+          <h4>We have everything</h4>
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+        <img src="0.jpg" alt="electronic chips">
+
+        <div class="carousel-caption">
+          <h1>ELECTRONIC CHIPS</h1>
+          <h4>We have everything</h4>
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+        <img src="1.jpg" alt="electronic planes">
+
+        <div class="carousel-caption">
+          <h1>ELECTRONIC PLANES</h1>
+          <h4>We have everything</h4>
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+        <img src="3.jpg" alt="discover">
+
+        <div class="carousel-caption">
+          <h1>DISCOVER YOURSELF</h1>
+          <h4>We discover future</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <h1 class="h1heading">services and facilities</h1>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="4.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+
+
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="5.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+
+
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="6.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+
+
+
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="7.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div> 
+
+
+
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="8.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+
+
+
+      <div class="col mb-4">
+        <!-- Card -->
+        <div class="card carddeco shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top touch" src="10.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+      </div>
+
+
+
+      <div>
+        <footer>&copy; 2021 YourResources.com <font style="float: right;">Designed By : Astitva </font>
+        </footer>
+      </div>
+
+
+</body>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  document.getElementById("mybutton").onclick = function () {
+    location.href = "http://127.0.0.1:5500/WebsiteElectronics/login.html";
+  };
+</script>
+</script>
+
+</html>

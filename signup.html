@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="login.css">
+
+    <title>SignUp into YourResources.com...</title>
+
+</head>
+
+<body>
+    <div class="pt-5">
+        <h1 class="text-center">SignUp into YourResources.Com</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div class="card card-body">
+
+                        <form id="submitForm" action="signup.php" method="post" data-parsley-validate="" enctype="multipart/form-data" class="needs-validation"
+                            data-parsley-errors-messages-disabled="true" novalidate  _lpchecked="1"><input
+                                type="hidden" name="_csrf" value="7635eb83-1f95-4b32-8788-abec2724a9a4">
+                            <div class="form-group required">
+                                <lSabel for="username">Username / Email</lSabel>
+                                <input type="text" class="form-control text-lowercase" id="username" required=""
+                                    name="username" value="">
+                                    <div class="valid-feedback">Valid!</div>
+                                    <div class="invalid-feedback">Please Fill Out</div>
+                            </div>       
+                            <div class="form-group required">
+                                <label class="d-flex flex-row align-items-center" for="password">Password
+                                </label>
+                                <input type="password" class="form-control" required="" id="password" name="password"
+                                    value="">
+                                    <div class="valid-feedback">Valid!</div>
+                                    <div class="invalid-feedback">Please Fill Out</div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="d-flex flex-row align-items-center" for="Confirm Password">Confirm Password
+                                </label>
+                                <input type="password" class="form-control" required="" id="confirm_password" name="confirm_password"
+                                    value="">
+                                    <div class="valid-feedback">Valid!</div>
+                                    <div class="invalid-feedback">Please Fill Out</div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label class="d-flex flex-row align-items-center" for="number">Mobile Number
+                                </label>
+                                <input type="number" class="form-control" required="" id="number" name="number"
+                                    value="">
+                                    <div class="valid-feedback">Valid!</div>
+                                    <div class="invalid-feedback">Please Fill Out</div>
+                            </div>
+
+                            <div class="form-group mt-4 mb-4">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="remember-me"
+                                        name="remember-me" data-parsley-multiple="remember-me">
+                                    <label class="custom-control-label" for="remember-me">Remember me?</label>
+                                </div>
+                            </div>
+                            <div class="form-group pt-1">
+                                <button class="btn btn-dark btn-block" type="submit">SignUp</button>
+                            </div>
+
+                            <div>
+                                <footer>&copy; 2021 YourResources.com <font style="float: right;">Designed By : Astitva </font> </footer>
+                            </div>
+
+</body>    
+
+<script>
+     // Disable form submissions if there are invalid fields
+     (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+
+
+
+    function nope() {
+      var pass = document.getElementById("password");
+      var cpass = document.getElementById("confirm_password");
+      var mobile = document.getElementById("number");
+
+      if (pass.value.trim() != cpass.value.trim()) {
+        alert("Please Enter The Same Password In Both Columns");
+        return false;
+      }
+
+      else if (mobile.value.length < 10 || mobile.value.length > 10) {
+        alert("ENTER CORRECT NUMBER");
+        return false;
+      }
+
+      else {
+
+        return true;
+      }
+    }
+</script>
